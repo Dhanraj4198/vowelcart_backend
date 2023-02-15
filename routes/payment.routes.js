@@ -19,8 +19,8 @@ paymentRouter.post("/", async (req, res) => {
       },
     ],
     mode: "payment",
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel",
+    success_url: "https://vowelcart.vercel.app/success",
+    cancel_url: "https://vowelcart.vercel.app/cancel",
   });
   res.redirect(303, session.url);
 });
